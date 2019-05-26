@@ -21,7 +21,7 @@ public class Todo {
     @NotBlank
     @Size(max = 100,min = 8)
     private String title;
-    @JsonProperty(" ")
+    @JsonProperty("description")
     @NotBlank
     @Size(max = 255,min = 8)
     private String description;
