@@ -1,0 +1,24 @@
+
+spring:
+  application.name: todolist-application
+  cloud.config:
+    discovery.enabled: false
+    fail-fast: false
+
+eureka.client:
+  register-with-eureka: false
+  registerWithEureka: false
+  fetchRegistry: false
+
+ribbon:
+  serverListRefreshInterval: 1000
+  ConnectTimeout: 6000a
+  ReadTimeout: 3000
+
+hystrix.commanddefault.execution.isolation.thread.timeoutInMilliseconds: 10000
+
+feign.hystrix.enabled: true
+
+hazelcast.max.no.heartbeat.seconds: 60
+
+todolist-aplication.url: https://todolistreative.herokuapp.com/v1/todo
