@@ -49,7 +49,7 @@ public class TodoViewDialog extends Dialog {
                 todo.setTitle(txtTitleTask.getValue());
                 todo.setDescription(txtDescriptionTask.getValue());
                 todo.setStatus("TODO");
-                //todo.setDeadline(dateDeadLine.getValue());
+                todo.setDeadline(dateDeadLine.getValue());
                 Todo todoSaved = todoService.create(todo);
                 UI.getCurrent().getPage().reload();
                 Notification.show(ConstanteMsg.MSG_SUCCESS_SAVE,3000, Notification.Position.TOP_END);
